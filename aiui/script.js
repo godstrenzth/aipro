@@ -23,6 +23,9 @@ function submitForm(data1, data2, data3, data4, data5, data6, data7) {
         
     })
     .then((response) => response.json())
-    .then((json) => console.log(JSON.stringify(json)));
+    .then((json) =>{
+        // Display the result in the 'result' div
+        document.getElementById("result").innerHTML = JSON.stringify(json);
+    })// console.log(JSON.stringify(json)));
     //console.log(json);
 }
